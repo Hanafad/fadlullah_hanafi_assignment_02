@@ -32,15 +32,14 @@ function sumOfNumbers(arrayOfNumbers) {
  * @returns number the count of even numbers
  */
 function countEvenNumbers(arrayOfNumbers) {
-  const evenNum = [];
-  arrayOfNumbers.forEach(number => {
-    if (number % 2 == 0){
-       evenNum.push(number);
-    }
-  });
-  
-    return evenNum;
-}
+  let even = 0;
+   arrayOfNumbers.forEach(function (number) {
+     if (number % 2 === 0) {
+       even++;
+     }
+   });
+   return even;
+ }
  assignment.countEvenNumbers = countEvenNumbers;
 
 /**
